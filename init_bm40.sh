@@ -32,27 +32,7 @@ then
     echo "Creating BM40 symbolic link..."
     ln -s "$KEYBOARD_HOME/src/qmk/$BM40/rafaelromao" "$QMK_HOME/$BM40"
 fi
-<<<<<<< HEAD:init_bm40.sh
 echo "Checking out qmk v0.15.4..."
 cd $QMK_HOME
 git checkout 0.15.4
 cd ..
-=======
-if [[ ! -d "$QMK_HOME/$XD75/rafaelromao" ]]
-then
-    echo "Creating XD75 symbolic link..."
-    ln -s "$KEYBOARD_HOME/src/qmk/$XD75/rafaelromao" "$QMK_HOME/$XD75"
-<<<<<<< HEAD:init_bm40.sh
-fi
-
-# Symlink KMONAD custom code
-
-if [[ ! -d "$KMONAD_USER_SPACE/rafaelromao" ]]
-then
-    echo "Creating KMONAD userspace symbolic link..."
-    ln -s "$KEYBOARD_HOME/src/kmonad/keymap/user/rafaelromao" "$KMONAD_USER_SPACE"
-fi
->>>>>>> 442c859 (prepare kmonad init):init.sh
-=======
-fi
->>>>>>> 287c479 (refactor and update readme):init_qmk.sh
